@@ -160,3 +160,54 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.amigos-list-container {
+    background: #aeaeaed1;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.664);
+    width: 250px;
+    /* max-height: 250px; */
+    min-height: 50%;
+    overflow-y: auto;
+    text-align: center;
+}
+
+/* Posición fija arriba a la derecha dentro de la sección */
+.amigos-list-top-right {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.amigos-list-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.name-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.name-list li {
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    padding: 6px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+    background-color: #ffffff;
+    border-radius: 5%;
+}
+
+.name-list li:last-child {
+    border-bottom: none;
+}
+.main-section {
+    position: relative;
+}
