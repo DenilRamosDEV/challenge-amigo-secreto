@@ -1,8 +1,8 @@
 let lista_amigos_total = [];
 
 function esNombreValido(nombre) {
-    // No vacío, solo letras y espacios, mínimo 2 caracteres
-    const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,}$/;
+    // No vacío, solo letras y espacios, mínimo 2 caracteres, máximo 25 caracteres
+    const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,25}$/;
     return regex.test(nombre.trim());
 }
 
@@ -24,7 +24,7 @@ function actualizarListaVisual() {
 function agregarAmigo() {
     const nombre = document.getElementById('amigo').value;
     if (!esNombreValido(nombre)) {
-        mostrarMensaje("Nombre inválido. Solo letras y mínimo 2 caracteres.", "error");
+        mostrarMensaje("Nombre inválido. Solo letras, mínimo 2 caracteres y maximo 25 caracteres.", "error");
         limpiarInput();
         return;
     }
@@ -37,6 +37,7 @@ function agregarAmigo() {
     actualizarListaVisual();
     mostrarMensaje("Amigo agregado correctamente.", "success");
     limpiarInput();
+    document.getElementById('amigo').focus();
 }
 
 function sortearAmigo() {
@@ -49,3 +50,9 @@ function sortearAmigo() {
     lista_amigos_total = [];
     actualizarListaVisual();
 }
+
+document.getElementById('amigo').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        agregarAmigo();
+    }
+});

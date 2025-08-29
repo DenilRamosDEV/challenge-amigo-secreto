@@ -162,18 +162,18 @@ ul {
 }
 
 .amigos-list-container {
-    background: #aeaeaed1;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.664);
-    width: 250px;
-    /* max-height: 250px; */
+    background: linear-gradient(135deg, #e0e0e0 0%, #c4c4c4 100%);
+    border-radius: 18px;
+    padding: 20px 18px;
+    box-shadow: 0 6px 24px rgba(75, 105, 253, 0.15), 0 1.5px 8px rgba(0,0,0,0.10);
+    width: 270px;
     min-height: 50%;
+    max-height: 80vh;
     overflow-y: auto;
     text-align: center;
+    border: 3px solid #4B69FD;
 }
 
-/* Posición fija arriba a la derecha dentro de la sección */
 .amigos-list-top-right {
     position: absolute;
     top: 25px;
@@ -182,10 +182,12 @@ ul {
 
 .amigos-list-title {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #000000;
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: #4B69FD;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #fff;
 }
 
 .name-list {
@@ -196,17 +198,26 @@ ul {
 
 .name-list li {
     font-family: 'Inter', sans-serif;
-    font-size: .8rem;
-    padding: 6px 0;
-    margin: 5px 0;
-    border-bottom: 1px solid #e0e0e0;
-    color: #444;
-    background-color: #ffffff;
-    border-radius: 5%;
+    font-size: .95rem;
+    padding: 10px 0;
+    margin: 7px 0;
+    border-bottom: 1px solid #d1d5db;
+    color: #222;
+    background: linear-gradient(90deg, #fff 70%, #f9f9ff 100%);
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(75, 105, 253, 0.07);
+    transition: background 0.2s, transform 0.2s;
 }
 
 .name-list li:last-child {
     border-bottom: none;
+}
+
+.name-list li:hover {
+    background: #eaf0ff;
+    transform: scale(1.03);
+    color: #4B69FD;
+    cursor: pointer;
 }
 .main-section {
     position: relative;
