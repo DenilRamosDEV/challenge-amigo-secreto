@@ -29,10 +29,16 @@ Aplicación web para organizar sorteos de "Amigo Secreto" de manera sencilla y v
 - Solo se permiten letras y espacios.
 - No se pueden repetir nombres.
 
+## Demo
+
+A continuación se muestra la pantalla de la aplicación en uso:
+
+![Amigo Secreto](assets/pantalla.png)
+
 ## Créditos
 
 Desarrollado por Denil Ramos para el desafío de Alura ONE G9.
 
 ---
 
-¡Disfruta organizando tu Amigo
+¡Disfruta organizando tu Amigo Secreto!
